@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlockCtrl : ChiMonoBehaviour
 {
     public  SpriteRenderer sprite;
-
+   
     public BlockData blockData;
 
 
@@ -14,6 +14,7 @@ public class BlockCtrl : ChiMonoBehaviour
         base.LoadComponents();
         this.LoadModel();
         this.LoadData();
+     
 
     }
     protected virtual void LoadModel()
@@ -23,6 +24,8 @@ public class BlockCtrl : ChiMonoBehaviour
         this.sprite = model.GetComponent<SpriteRenderer>();
         Debug.Log(transform.name + ": LoadModel", gameObject);
     }
+
+    
     protected virtual void LoadData()
     {
         if (this.blockData != null) return;

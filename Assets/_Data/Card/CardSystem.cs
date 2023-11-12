@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class CardSystem : CardAbstract
@@ -12,6 +14,7 @@ public class CardSystem : CardAbstract
     public int height = 4;
     public float offsetY = 0.1f;
     public Block blocks;
+    public Block blockDown;
     public List<Node> nodes;
     public List<int> nodeIds;
     protected override void LoadComponents()
@@ -24,8 +27,8 @@ public class CardSystem : CardAbstract
 
     protected override void Start()
     {
-     
-        this.SpawnBlocks();
+   
+        this.SpawnBlocksAndBlockDown();
 
     }
 
@@ -59,7 +62,8 @@ public class CardSystem : CardAbstract
     protected virtual void LoadBlock()
     {
         if (this.blocks != null) return;
-        this.blocks = Resources.Load<Block>("Pokemon");
+        this.blocks = Resources.Load<Block>("Card");
+        this.blockDown = Resources.Load<Block>("Down");
     }
 
     protected virtual void SpawnNodes()
@@ -78,12 +82,17 @@ public class CardSystem : CardAbstract
         }   
     }
 
- 
 
-    protected virtual void SpawnBlocks()
+    protected  virtual void CardFlipped(BlockClick blockClick)
+    {
+        blockClick.boxCollider
+    }
+
+    protected virtual void SpawnBlocksAndBlockDown()
     {
         int blockCount = 2;
         Vector3 pos = Vector3.zero;
+        Vector3 pos1 = Vector3.zero;
         foreach (Sprite sprite in this.blocks.sprites)
         {
             for(int i = 0;i < blockCount; i++)
@@ -93,19 +102,34 @@ public class CardSystem : CardAbstract
                 pos.y = node.posY;
                 Transform block = this.ctrl.blockSpawner.Spawn(BlockSpawner.BLOCK, pos, Quaternion.identity);
                 BlockCtrl blockCtrl = block.GetComponent<BlockCtrl>();
+
                 this.LinkNodeBlock(node, blockCtrl);
-                blockCtrl.blockData.setSprite(sprite);
-                
-                block.gameObject.SetActive(true);
+               // blockCtrl.blockData.setSprite(sprite);
+               
+
+                Node node1 = new Node();
+                node1 = blockCtrl.blockData.node;
+                pos1.x = node1.x;
+                pos1.y = node1.posY;
+                Transform blockDown = this.ctrl.blockSpawner.Spawn(BlockSpawner.BLOCKdown, pos1, Quaternion.identity);
+                BlockCtrl blockCtrlDown = blockDown.GetComponent<BlockCtrl>();
+                   this.LinkNodeBlock(node, blockCtrlDown);
+                blockCtrlDown.blockData.setSprite(this.blockDown.sprites[0]);
+                blockCtrlDown.gameObject.SetActive(true);
             }
+           
         }
+       
+
     }
+
+
 
     protected virtual Node getRandomNode()
     {
         Node returnNode;
-        int rand,randId;
-
+        int randId;
+        
         int nodeCount = this.nodes.Count;
         for (int i = 0; i < nodeCount; i++)
         {
@@ -125,6 +149,6 @@ public class CardSystem : CardAbstract
         node.blockCtrl = blockCtrl;
     }
 
-
+ 
   
 }

@@ -9,8 +9,9 @@ public class BlockSpawner : Spawner
     public static BlockSpawner Instance => instance;
 
     public static string BLOCK = "Block";
+    public static string BLOCKdown = "BlockDown";
 
- 
+
     protected override void Awake()
     {
         base.Awake();

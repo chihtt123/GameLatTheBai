@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,12 @@ public class BlockData : BlockAbstract
 
     public virtual void setSprite(Sprite sprite) 
     {
-        this.ctrl.sprite.sprite = sprite;
-        this.ctrl.sprite.size = new Vector2 (this.ctrl.sprite.size.x * 0.2f, this.ctrl.sprite.size.y * 0.2f);
-       }
+
+        if(sprite != null)
+        {
+            this.ctrl.sprite.sprite = sprite;
+        }
+       
+    }
+   
 }
