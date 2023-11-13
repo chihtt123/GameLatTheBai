@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class CardManagerCtrl : ChiMonoBehaviour
 {
@@ -18,6 +21,8 @@ public class CardManagerCtrl : ChiMonoBehaviour
         base.Awake();
         if(CardManagerCtrl.instance != null)  Debug.LogError("Only 1 CardManagerCtrl allow to exist");
         CardManagerCtrl.instance = this;
+
+        this.Detroy();
     }
 
 
@@ -27,10 +32,15 @@ public class CardManagerCtrl : ChiMonoBehaviour
         this.LoadSpawner();
     }
 
+    protected  void Update()
+    {
+        this.DeleteTheSameBlock();
+    }
+
     protected virtual void LoadSpawner()
     {
         if (this.blockSpawner != null) return;
-        this.blockSpawner = transform.Find("BlockSpawner").GetComponent<BlockSpawner>();
+        this.blockSpawner = transform.Find("BlockSpawner").GetComponent<BlockSpawner>();    
         Debug.Log(transform.name + ": LoadSpawner", gameObject);
     }
 
@@ -53,6 +63,29 @@ public class CardManagerCtrl : ChiMonoBehaviour
         this.secondBlock = blockCtrl;
     }
 
+
+    public virtual void DeleteTheSameBlock()
+    {
+
+        if(this.firstBlock!=null && this.secondBlock  !=  null ) 
+        {
+            SpriteRenderer spriteOne = this.firstBlock.GetComponentInChildren<SpriteRenderer>();
+            SpriteRenderer spriteTwo = this.secondBlock.GetComponentInChildren<SpriteRenderer>();
+            if (spriteOne.sprite.name.Equals(spriteTwo.sprite.name))
+            {
+                firstBlock.gameObject.SetActive(false);
+                secondBlock.gameObject.SetActive(false);
+                this.firstBlock = null; this.secondBlock = null;
+                return; 
+            }
+            else
+            {
+                this.firstBlock = null; this.secondBlock = null;
+            }
+           
+        }
+        
+    }
 
 
 }

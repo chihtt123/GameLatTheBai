@@ -28,7 +28,7 @@ public class CardSystem : CardAbstract
     protected override void Start()
     {
    
-        this.SpawnBlocksAndBlockDown();
+        this.SpawnBlock();
 
     }
 
@@ -85,14 +85,13 @@ public class CardSystem : CardAbstract
 
     protected  virtual void CardFlipped(BlockClick blockClick)
     {
-        blockClick.boxCollider
+        
     }
 
-    protected virtual void SpawnBlocksAndBlockDown()
+    protected virtual void SpawnBlock()
     {
         int blockCount = 2;
         Vector3 pos = Vector3.zero;
-        Vector3 pos1 = Vector3.zero;
         foreach (Sprite sprite in this.blocks.sprites)
         {
             for(int i = 0;i < blockCount; i++)
@@ -104,18 +103,10 @@ public class CardSystem : CardAbstract
                 BlockCtrl blockCtrl = block.GetComponent<BlockCtrl>();
 
                 this.LinkNodeBlock(node, blockCtrl);
-               // blockCtrl.blockData.setSprite(sprite);
-               
+                blockCtrl.blockData.setSprite(sprite);
+                blockCtrl.gameObject.SetActive(true);
 
-                Node node1 = new Node();
-                node1 = blockCtrl.blockData.node;
-                pos1.x = node1.x;
-                pos1.y = node1.posY;
-                Transform blockDown = this.ctrl.blockSpawner.Spawn(BlockSpawner.BLOCKdown, pos1, Quaternion.identity);
-                BlockCtrl blockCtrlDown = blockDown.GetComponent<BlockCtrl>();
-                   this.LinkNodeBlock(node, blockCtrlDown);
-                blockCtrlDown.blockData.setSprite(this.blockDown.sprites[0]);
-                blockCtrlDown.gameObject.SetActive(true);
+                
             }
            
         }

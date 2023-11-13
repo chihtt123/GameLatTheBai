@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ public class BlockData : BlockAbstract
 {
     [Header("BlockData")]
     public Node node;
+    public Node Node => node;
 
     public virtual void setNode(Node node)
     {
@@ -21,5 +23,6 @@ public class BlockData : BlockAbstract
         }
        
     }
-   
+
+  
 }

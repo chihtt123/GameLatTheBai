@@ -26,14 +26,8 @@ public class BlockClick : BlockAbstract
     protected void OnMouseUp()
     {
 
-        if (CardManagerCtrl.Instance != null)
-        {
-            CardManagerCtrl.Instance.SetBlock(this.ctrl);
+        CardManagerCtrl.Instance.SetBlock(this.ctrl);
+    }
 
-        }
-        else
-        {
-            Debug.LogError("CardManagerCtrl.Instance là null!");
-        }
-    }   
+    
 }
