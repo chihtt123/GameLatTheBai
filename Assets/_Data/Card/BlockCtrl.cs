@@ -5,9 +5,9 @@ using UnityEngine;
 public class BlockCtrl : ChiMonoBehaviour
 {
     public  SpriteRenderer sprite;
-   
+    public SortingLayer layer;
     public BlockData blockData;
-
+    
 
     protected override void LoadComponents()
     {
@@ -22,10 +22,11 @@ public class BlockCtrl : ChiMonoBehaviour
         if (this.sprite != null) return;
         Transform model = transform.Find("Model");
         this.sprite = model.GetComponent<SpriteRenderer>();
+
         Debug.Log(transform.name + ": LoadModel", gameObject);
     }
 
-    
+  
     protected virtual void LoadData()
     {
         if (this.blockData != null) return;

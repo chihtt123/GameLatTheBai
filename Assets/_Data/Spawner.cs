@@ -13,6 +13,7 @@ public abstract class Spawner : ChiMonoBehaviour
 
     [SerializeField] protected List<Transform> prefabs;
     [SerializeField] protected List<Transform> poolObjs;
+    [SerializeField] public List<Transform> holdersList;
 
     protected override void LoadComponents()
     {
@@ -20,12 +21,36 @@ public abstract class Spawner : ChiMonoBehaviour
         this.LoadHolder();
     }
 
+    protected virtual void Update()
+    {
+        base.Start();
+        this.LoadHolders();
+    }
+
+
     protected virtual void LoadHolder()
     {
         if (this.holder != null) return;
         this.holder = transform.Find("Holder");
         Debug.LogWarning(transform.name + ": LoadHodler", gameObject);
     }
+
+    
+
+    protected virtual void LoadHolders()
+    {
+
+        if (this.holdersList.Count > 0) return;
+
+        foreach (Transform h in holder)
+        {
+            this.holdersList.Add(h);
+        }
+        
+
+        Debug.LogWarning(transform.name + ": LoadHolders", gameObject);
+    }
+
 
     protected virtual void LoadPrefabs()
     {
@@ -74,31 +99,12 @@ public abstract class Spawner : ChiMonoBehaviour
 
     protected virtual Transform GetObjectFromPool(Transform prefab)
     {
-        foreach (Transform poolObj in this.poolObjs)
-        {
-            if (poolObj == null) continue;
-
-            if (poolObj.name == prefab.name)
-            {
-                this.poolObjs.Remove(poolObj);
-                return poolObj;
-            }
-        }
-
         Transform newPrefab = Instantiate(prefab);
         newPrefab.name = prefab.name;
         return newPrefab;
     }
 
-    public virtual void Despawn(Transform obj)
-    {
-        if (this.poolObjs.Contains(obj)) return;
-
-        this.poolObjs.Add(obj);
-        obj.gameObject.SetActive(false);
-        this.spawnedCount--;
-    }
-
+   
     public virtual Transform GetPrefabByName(string prefabName)
     {
         foreach (Transform prefab in this.prefabs)

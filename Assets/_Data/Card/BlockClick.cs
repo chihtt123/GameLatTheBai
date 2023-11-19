@@ -24,9 +24,8 @@ public class BlockClick : BlockAbstract
         Debug.Log(transform.name + " LoadCollider", gameObject);
     }
     protected void OnMouseUp()
-    {
-
-        CardManagerCtrl.Instance.SetBlock(this.ctrl);
+    { 
+        CardManagerCtrl.Instance.SetBlock(this.ctrl);   
     }
 
     

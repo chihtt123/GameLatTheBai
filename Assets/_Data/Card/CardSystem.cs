@@ -4,12 +4,13 @@ using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.U2D;
+using static UnityEditor.PlayerSettings;
 
 public class CardSystem : CardAbstract
 {
 
     [Header("CardSystem")]
-   
     public int width = 3;
     public int height = 4;
     public float offsetY = 0.1f;
@@ -17,6 +18,8 @@ public class CardSystem : CardAbstract
     public Block blockDown;
     public List<Node> nodes;
     public List<int> nodeIds;
+    public List<BlockCtrl> listBlock;
+    public List<BlockCtrl> listDownBlock;
     protected override void LoadComponents()
     {
         base.LoadComponents();
@@ -28,7 +31,8 @@ public class CardSystem : CardAbstract
     protected override void Start()
     {
    
-        this.SpawnBlock();
+       this.SpawnBlock();
+       this.SpawnBlockDown();
 
     }
 
@@ -59,6 +63,8 @@ public class CardSystem : CardAbstract
 
         
     }
+
+
     protected virtual void LoadBlock()
     {
         if (this.blocks != null) return;
@@ -76,6 +82,7 @@ public class CardSystem : CardAbstract
             
             Transform block = this.ctrl.blockSpawner.Spawn(BlockSpawner.BLOCK, pos, Quaternion.identity);
             BlockCtrl blockCtrl = block.GetComponent<BlockCtrl>();
+            
             blockCtrl.blockData.setNode(node);
     
 
@@ -83,9 +90,23 @@ public class CardSystem : CardAbstract
     }
 
 
-    protected  virtual void CardFlipped(BlockClick blockClick)
+    protected virtual void SpawnBlockDown()
     {
-        
+        Vector3 pos = Vector3.zero;
+
+        foreach (Node node in this.nodes)
+        {
+            pos.x = node.x;
+            pos.y = node.posY;
+            Transform block = this.ctrl.blockSpawner.Spawn(BlockSpawner.BLOCK, pos, Quaternion.identity);
+            BlockCtrl blockCtrl = block.GetComponent<BlockCtrl>();
+            this.LinkNodeBlock(node, blockCtrl);
+            blockCtrl.sprite.sortingLayerName = "1";
+            blockCtrl.blockData.setSprite(this.blockDown.sprites[0]);
+            blockCtrl.gameObject.SetActive(true);
+
+            listDownBlock.Add(blockCtrl);
+        }
     }
 
     protected virtual void SpawnBlock()
@@ -96,17 +117,19 @@ public class CardSystem : CardAbstract
         {
             for(int i = 0;i < blockCount; i++)
             {
+
                 Node node = this.getRandomNode();
                 pos.x = node.x;
                 pos.y = node.posY;
                 Transform block = this.ctrl.blockSpawner.Spawn(BlockSpawner.BLOCK, pos, Quaternion.identity);
+             
                 BlockCtrl blockCtrl = block.GetComponent<BlockCtrl>();
-
+              
+                blockCtrl.sprite.sortingLayerName = "Default";
                 this.LinkNodeBlock(node, blockCtrl);
                 blockCtrl.blockData.setSprite(sprite);
                 blockCtrl.gameObject.SetActive(true);
-
-                
+                listBlock.Add(blockCtrl);
             }
            
         }
@@ -128,6 +151,7 @@ public class CardSystem : CardAbstract
             returnNode = this.nodes[this.nodeIds[randId]];
             this.nodeIds.RemoveAt(randId);
             if (returnNode.blockCtrl == null) return returnNode;
+
         }
         Debug.LogError("Node can't found");
         return null;
@@ -140,6 +164,7 @@ public class CardSystem : CardAbstract
         node.blockCtrl = blockCtrl;
     }
 
- 
   
+
+
 }
