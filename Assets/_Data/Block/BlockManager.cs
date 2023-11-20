@@ -25,8 +25,6 @@ public class BlockManager : MonoBehaviour
         InitializeBlock();
     }
 
-
-
     protected virtual void InitializeBlock()
     {
         blockPrefab.gameObject.SetActive(false);

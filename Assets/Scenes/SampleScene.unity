@@ -239,9 +239,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 1343538570}
+  blockManager: {fileID: 0}
   rows: 3
   cols: 4
-  cards: []
+  blocks: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
