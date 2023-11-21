@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -7,17 +7,15 @@ public class BlockManager : MonoBehaviour
 {
     [SerializeField] protected Transform blockPrefab;
 
-    [SerializeField] protected Transform blockManager;
-
+    [SerializeField] protected Transform GameUI;
 
     public int rows = 3;
     public int cols = 4;
 
+    private bool canFlip = true;
 
-
-    [SerializeField] List<Transform> blocks = new List<Transform>();
     private List<int> cardValues = new List<int>();
-    private Transform selectedCard;
+    [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
 
 
     protected virtual void Start()
@@ -44,10 +42,11 @@ public class BlockManager : MonoBehaviour
                 Transform card = Instantiate(blockPrefab, new Vector3(j, -i, 0), Quaternion.identity);
                 card.GetComponent<BlockItem>().SetValue(values[i * cols + j]);
                 card.gameObject.SetActive(true);
-                card.SetParent(this.transform);
-                blocks.Add(card);
+                card.SetParent(this.GameUI);
+               
             }
         }
+        return; 
     }
 
     protected virtual void ShuffleList<T>(List<T> list)
@@ -64,6 +63,40 @@ public class BlockManager : MonoBehaviour
     }
 
 
+    public bool CanFlip()
+    {
+        return canFlip;
+    }
+
+    public void AddFlippedCard(BlockItem block)
+    {
+        flippedBLock.Add(block);
+        Debug.Log("Game");
+        if (flippedBLock.Count == 2)
+        {
+            StartCoroutine(CheckMatch());
+        }
+    }
+
+    IEnumerator CheckMatch()
+    {
+        canFlip = false;
+
+        yield return new WaitForSeconds(1.5f); 
+        if (flippedBLock[0].Value == flippedBLock[1].Value)
+        {
+           
+        }
+        else
+        {
+            // No match
+            flippedBLock[0].UnflipCard();
+            flippedBLock[1].UnflipCard();
+        }
+
+        flippedBLock.Clear();
+        canFlip = true;
+    }
 
 
 }
