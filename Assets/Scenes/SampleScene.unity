@@ -217,7 +217,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 1
+  m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 200}
@@ -804,6 +804,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blockPrefab: {fileID: 1343538570}
   GameUI: {fileID: 422392429}
+  score: 0
+  remainingTurn: 0
+  correctPair: 0
   rows: 3
   cols: 4
   flippedBLock: []
