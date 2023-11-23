@@ -36,7 +36,7 @@ public class BlockItem : MonoBehaviour
             Image buttonImage = this.GetComponent<Image>();
   
             int indexImage = this.value;
-            buttonImage.sprite = blockManager.sprites[indexImage];    
+            buttonImage.sprite = blockManager.sprites[indexImage];      
         }
         else
         {
@@ -49,9 +49,8 @@ public class BlockItem : MonoBehaviour
     public void UnflipCard()
     {     
         isFlipped = false;
-       
         Image buttonImage = this.GetComponent<Image>();
-        buttonImage.sprite = blockManager.sprites[blockManager.sprites.Count-1];
+        buttonImage.sprite = blockManager.sprites[blockManager.sprites.Length-1];
 
     }
 

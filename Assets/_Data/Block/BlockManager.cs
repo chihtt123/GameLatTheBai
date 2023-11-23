@@ -22,11 +22,16 @@ public class BlockManager : MonoBehaviour
 
     private List<int> cardValues = new List<int>();
     [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
-    [SerializeField] public List<Sprite> sprites = new List<Sprite>();
+
+    [SerializeField] public Sprite[] sprites;
+    [SerializeField] public Sprite[] spritesGame;
 
     public int Score { get => score; set => score = value; }
 
-
+    protected virtual void Awake()
+    {
+        sprites = Resources.LoadAll<Sprite>("Image");
+    }
 
     protected virtual void Start()
     {
@@ -98,9 +103,12 @@ public class BlockManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f); 
         if (flippedBLock[0].Value == flippedBLock[1].Value)
         {
-            score+= 5;      
-            flippedBLock[0].gameObject.SetActive(false);
-            flippedBLock[1].gameObject.SetActive(false);
+            score+= 5;
+            flippedBLock[0].GetComponent<Button>().interactable = false;
+            flippedBLock[1].GetComponent<Button>().interactable = false;
+
+            flippedBLock[0].GetComponent<Button>().image.color = new Color(0,0,0, 0);
+            flippedBLock[1].GetComponent<Button>().image.color = new Color(0, 0, 0, 0);
         }
         else
         {
