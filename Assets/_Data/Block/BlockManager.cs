@@ -1,21 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BlockManager : MonoBehaviour
 {
+
+    private static BlockManager instance;
+    public static BlockManager Instance { get => instance; }
+
     [SerializeField] protected Transform blockPrefab;
 
     [SerializeField] protected Transform GameUI;
 
     [SerializeField] private int score;
 
-    [SerializeField] private int remainingTurn;
-    [SerializeField] private int correctPair;
+    [SerializeField] public int remainingTurn;
+    [SerializeField] public int correctPair;
 
-    public int rows = 3;
+    public int rows = 4;
     public int cols = 4;
 
     private bool canFlip = true;
@@ -26,10 +31,13 @@ public class BlockManager : MonoBehaviour
     [SerializeField] public Sprite[] sprites;
     [SerializeField] public Sprite[] spritesGame;
 
+
     public int Score { get => score; set => score = value; }
 
     protected virtual void Awake()
     {
+        if (BlockManager.instance != null) Debug.LogError("Only 1 BlockManager allow to exist");
+        BlockManager.instance = this;
         sprites = Resources.LoadAll<Sprite>("Image");
     }
 
@@ -41,7 +49,7 @@ public class BlockManager : MonoBehaviour
     protected virtual void InitializeBlock()
     {
         this.score = 0;
-        this.remainingTurn = 20;
+        this.remainingTurn = 30;
         this.correctPair = 0;
 
         blockPrefab.gameObject.SetActive(false);
@@ -112,7 +120,6 @@ public class BlockManager : MonoBehaviour
         }
         else
         {
-            score--;
             flippedBLock[0].UnflipCard();
             flippedBLock[1].UnflipCard();
         }
