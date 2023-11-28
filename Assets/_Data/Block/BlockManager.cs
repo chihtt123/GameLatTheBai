@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
@@ -8,20 +9,24 @@ using UnityEngine.UI;
 public class BlockManager : MonoBehaviour
 {
 
+
+
     private static BlockManager instance;
     public static BlockManager Instance { get => instance; }
 
     [SerializeField] protected Transform blockPrefab;
 
-    [SerializeField] protected Transform GameUI;
+    [SerializeField] public  Transform GameUI;
+    [SerializeField] public Transform Blocks;
+
 
     [SerializeField] private int score;
 
     [SerializeField] public int remainingTurn;
     [SerializeField] public int correctPair;
 
-    public int rows = 4;
-    public int cols = 4;
+    public int rows = 0;
+    public int cols = 0;
 
     private bool canFlip = true;
 
@@ -32,24 +37,25 @@ public class BlockManager : MonoBehaviour
     [SerializeField] public Sprite[] spritesGame;
 
 
+    [SerializeField] private List<GameObject> levels = new List<GameObject>();
+
     public int Score { get => score; set => score = value; }
 
-    protected virtual void Awake()
+    void Awake()
     {
         if (BlockManager.instance != null) Debug.LogError("Only 1 BlockManager allow to exist");
         BlockManager.instance = this;
+        sprites = Resources.LoadAll<Sprite>("Image/Blocks");
         sprites = Resources.LoadAll<Sprite>("Image");
     }
 
-    protected virtual void Start()
-    {
-        InitializeBlock();
-    }
+  
 
-    protected virtual void InitializeBlock()
+      public void InitializeBlock()
     {
+        
         this.score = 0;
-        this.remainingTurn = 30;
+        this.remainingTurn = 20;
         this.correctPair = 0;
 
         blockPrefab.gameObject.SetActive(false);
@@ -69,13 +75,14 @@ public class BlockManager : MonoBehaviour
                 Transform card = Instantiate(blockPrefab, new Vector3(j, -i, 0), Quaternion.identity);
                 card.GetComponent<BlockItem>().SetValue(values[i * cols + j]);
                 card.gameObject.SetActive(true);
-                card.SetParent(this.GameUI);     
+               
+                card.SetParent(this.Blocks);     
             }
         }
         return; 
     }
 
-    protected virtual void ShuffleList<T>(List<T> list)
+      void ShuffleList<T>(List<T> list)
     {
         int n = list.Count - 1;
         while (n > 0)
@@ -115,8 +122,6 @@ public class BlockManager : MonoBehaviour
             flippedBLock[0].GetComponent<Button>().interactable = false;
             flippedBLock[1].GetComponent<Button>().interactable = false;
 
-            flippedBLock[0].GetComponent<Button>().image.color = new Color(0,0,0, 0);
-            flippedBLock[1].GetComponent<Button>().image.color = new Color(0, 0, 0, 0);
         }
         else
         {
@@ -128,7 +133,11 @@ public class BlockManager : MonoBehaviour
         canFlip = true;
     }
 
-
+    public void ChangeColumnsAndRows(int row , int col)
+    {
+        this.rows = row;
+        this.cols = col;
+    }
 }
 
    

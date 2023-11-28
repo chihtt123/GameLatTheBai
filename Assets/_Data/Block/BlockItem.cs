@@ -11,7 +11,7 @@ public class BlockItem : MonoBehaviour
     [SerializeField] private BlockManager blockManager ;
     
 
-    protected virtual void Start()
+      void Start()
     {
         blockManager = FindObjectOfType<BlockManager>(); 
         GetComponent<Button>().onClick.AddListener(FlipCard);
@@ -23,12 +23,12 @@ public class BlockItem : MonoBehaviour
         {     
             isFlipped = true;
             blockManager.AddFlippedCard(this);
-            this.imageTransfer();
+            this.ImageTransfer();
         }
         Debug.Log(isFlipped +" "+  blockManager.CanFlip());
     }
 
-    protected virtual void imageTransfer()
+      void ImageTransfer()
     {
 
         if (isFlipped)

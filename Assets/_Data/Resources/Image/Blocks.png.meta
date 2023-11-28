@@ -1,0 +1,2511 @@
+fileFormatVersion: 2
+guid: f5352191b74e0d2428100f76e2d578e4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 467
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e1ceac8b4d29b4cb8d8f74da409306
+      internalID: 2014351109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 469
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ebaaa706cffa14c8a182f004539098
+      internalID: -1188413384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 472
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f0f154b9129e40b30e46e8a76f8ca
+      internalID: -789033991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 469
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bb910e1bf094c428e4be47b07f25cf
+      internalID: -623790225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 469
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235f3567fafdb1e4fb41c95e9a525146
+      internalID: -161036305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 6
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 467
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9471df4452ff52f4a9e33f10ef573b38
+      internalID: -330175940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 7
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 467
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4781858f396554fbc6088662a0ecb0
+      internalID: 928177338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 420
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9fcef4259fbed4290339a6bdffc40c
+      internalID: -1804715976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 414
+        width: 43
+        height: 43
+      alignment: 9
+      pivot: {x: 0.45605558, y: 0.34619352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd3c4f7dbf8fbb41b4ddc0c57d47d78
+      internalID: -657258419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 418
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a773d05882aec7d4995c08f72469d336
+      internalID: -119774323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 418
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78442d6b947e27478268f00c9043e7b
+      internalID: -1348456458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 420
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203ebb9dd5cebaa4eae26a56d95aeee6
+      internalID: -1835071700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 419
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4187175a7b0ce4e479adb287f6944418
+      internalID: -2126644369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 14
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 415
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d98254c5d90eb645b1b9bd1246bd5b7
+      internalID: 1552882992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 15
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 416
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0e69a9b277adc4595adcd24b19527c
+      internalID: 192728564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 16
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 415
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e85b1567e3f24459ecc2fb2508f468
+      internalID: 101229280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 17
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 415
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cf9393f1b30bb48a542f2e5045b21b
+      internalID: 792151779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 18
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 43
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30a087ebf89380498e83d88d87e07a1
+      internalID: -1541640172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 421
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a384b06592cf924d817a871aed303b6
+      internalID: 799000081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_32
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 367
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a062542567c55ec42a76920554829113
+      internalID: -424322229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_33
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 372
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4671e0a2d38cea4cbce8f822e87b7dd
+      internalID: 260454046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_34
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 367
+        width: 48
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c23edb82678b84d902afd4379365f2
+      internalID: 259090682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_35
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 372
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa40c8d080cf654aa275bdfd2bf956a
+      internalID: -508995355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_36
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 369
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a22a9fd7e58b0947a017cb3b07a1a88
+      internalID: -1165062818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_37
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 374
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7ce90d9b878ff4bbcc67c023bc579e
+      internalID: -18466044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_38
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 367
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167e03ace7c9f8742a83e2f9ab13cd06
+      internalID: 1468908011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_39
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 375
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3842a925413a941b671fc7a88cc1bf
+      internalID: 1886195585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_40
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 369
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5183b3a61b89e4b86e01c9759c494e
+      internalID: 1943489515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_41
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 364
+        width: 36
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1802f286d7cee49a941355315c2058
+      internalID: 607208060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_42
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 370
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9bf70a59ebefd46bf92d6ce03285fb
+      internalID: -884081203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_43
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 369
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949cde02d390c784388ab3e72f6f80cf
+      internalID: 1862889885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_44
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 368
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76fe4472804523479b25bedada807ab
+      internalID: -456058825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_45
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 375
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeff0655c6a5cbf4e96e5b88d492df13
+      internalID: 1528062705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_46
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 363
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9562d7676a7b9ee4abb1af6bce8be4ca
+      internalID: 655158581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_47
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 372
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4334965d4e3bcea4a89e40d0cc8b0f27
+      internalID: -548296818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 318
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142707d7feb436f46bdf737a0b754922
+      internalID: -958444244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 326
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8dd5e0d4bca8841876b408b9d4394b
+      internalID: -642317351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_50
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 313
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7216c0c03a4f4f545a15410ce69b1535
+      internalID: 2055919447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 312
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374e701cde150be4d83264484947f5af
+      internalID: -1616435225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_52
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 323
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c1cef362b1de24faed0e6656cad527
+      internalID: -84241563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_53
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 321
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60b9caa946e6ac49abac716fc2849e7
+      internalID: -527857324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_54
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 315
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcbb5188bf97484caf25d8974e4a18c
+      internalID: -1248515053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_55
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 322
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb4bfc339d1d3645b3212d7564f8a54
+      internalID: 386023998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_56
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 320
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0029906c3cc214cb7b97538c1f855d
+      internalID: 258677133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_57
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 323
+        width: 33
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb09087bde27ba48a09f4734b155ae5
+      internalID: -861648368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_58
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 315
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b8eb5cb3b026d4682f71035c49a14b
+      internalID: 516640991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_59
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 311
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aff4c712053ee4cba35f9b84e555ca
+      internalID: 1786788431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_60
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 319
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fa3ab71b70fc7409983ba346a54347
+      internalID: 1364732548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_61
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 315
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2787c8323b26f4c84968e25372dd65
+      internalID: 848494185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_62
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 312
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0d01c80a30d0f4ab70aa1ffeb09838
+      internalID: 313683168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_63
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 315
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6abac9a408e1e2479810786576e103a
+      internalID: -868815728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_64
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 266
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4527645bec0a708429ced50bf92347f4
+      internalID: 926169039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_65
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 262
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cbd418e9aa5094e992e1e52900f70c
+      internalID: 503536251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_66
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 264
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b27793954e14574cb23f3570c48d6f5
+      internalID: -750243372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_67
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 270
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3374f6b9a94a519468596a73febf73ef
+      internalID: -1368641012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_68
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 272
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e01d28a57ab5d498ee5ea4fb9487c4
+      internalID: 2014828439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_69
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 259
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bd8b1e2127ad5438f01090a386bcfd
+      internalID: -585769503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_70
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 260
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e834c6c48d29724dae855029e738540
+      internalID: -792225238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_71
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 263
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0c0866deb952f4e8873694ad9b793b
+      internalID: 474567114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_72
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 256
+        width: 51
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acaef7a74ac3fd4a9b61db2c3a34b4a
+      internalID: -1285950703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_73
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 257
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604f07b1e1c4244499970b71399420b8
+      internalID: 722480614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_74
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 256
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb779b5057c6004d8373803beaab3f2
+      internalID: -894455563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_75
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 256
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee110f3a45015b04180ffd30f70be8d0
+      internalID: -1611509792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_76
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 265
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443c11d4e8b63084fa64708bd9f59b2f
+      internalID: 158695268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_77
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 259
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3f349f9d87bd74abc9ae375578e873
+      internalID: 409880992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_78
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 259
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c79a8c3f9e413438a37101e9e6eadc
+      internalID: 1152262441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_79
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 264
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b67a0047b727c24bbd97dc93130da97
+      internalID: -1444068298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_80
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 217
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3c5a3eea1c40744a64d1f4d792f7c9
+      internalID: -464545248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 215
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae45b3ddd2be6040bfc2cbcc3745b24
+      internalID: 221753871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_82
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 206
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc7723da0e67c04dbc340e4689bad04
+      internalID: 1526538077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_83
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 205
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcbec4ef91299145b52ed25d9235007
+      internalID: -137942583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_84
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 210
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037b2afcf9002c7458a64ba95d49cdcc
+      internalID: -615408837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_85
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 212
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2dfb0d081befe468298b3221d03a11
+      internalID: -891418750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_86
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 219
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1278c1ff2ae4b45bee345be35385ac
+      internalID: 9462427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_87
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 210
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6a4354d13adbb41915462ef5e15e76
+      internalID: -1055302199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_88
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 106
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d97d216fa52aa48b81b6cb43d43c6f
+      internalID: -1628950018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_89
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 109
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ae09ff6e08ef84794d0270c9c2e54a
+      internalID: -1374380411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_90
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 53
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdb08006e62189418e8ea4e03b7f5f1
+      internalID: 314662416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_91
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 113
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ce52fb2dc3f5b4684d53e12b7e06c9
+      internalID: 2058701247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_92
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 112
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ca786c511925e4b84ccb732f1d3fc1
+      internalID: -311079307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_93
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 111
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f6245789a19194992aa292964658cd
+      internalID: 1889305951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_94
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 106
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d48dc9d685a01b449e45725e2d6ab66
+      internalID: -1306081370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_95
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 110
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fda72bd591f9e4ea1530abe0d555c9
+      internalID: -776111093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_96
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 106
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc6f3b31c071534187deb709c91ad46
+      internalID: -38490994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_97
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd9df80869c72f43b1fe357e58271a7
+      internalID: -1516617433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_98
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be0807944aa4b84788ecd3b65effd2f
+      internalID: 999099879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_99
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dd187039008fa45a718cc945f03829
+      internalID: -288798285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_100
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ce7a3ba39c68b44a08ec11b0b6e95a
+      internalID: 1513327034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_101
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f4e0b735b7edd49a5ef6cf1fc1d257
+      internalID: 887160578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_102
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836d1962a533cae418a945cf3e294674
+      internalID: 1794956604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_103
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 105
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9d26611cfe58741a8e7f2efbfcebac
+      internalID: -1255424056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_104
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 53
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a639a16a08e0e4dae47fc8f1540c2e
+      internalID: 1014911303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_105
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 53
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de85f683e8ba13e4db4efdb9cb44bfa1
+      internalID: 956038290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_106
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 209
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c1864016415554bb6134bd92a61587
+      internalID: 1181746408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_107
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 53
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1e237cde966064c9f502940d2ef619
+      internalID: -199328048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_108
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 53
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa984296396be9043a623a89a69b1495
+      internalID: -507151956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_109
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 53
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346a743cd987e9d4f93ca9ce713d4e9a
+      internalID: 1227841118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_110
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 66
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4a9dd734f4b9847b40c9d118943592
+      internalID: -91998767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_111
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 66
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf6e32bbd1a9f241b099b3244979011
+      internalID: -1070032875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_112
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 66
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9279eb5ceec3b2144a533bfccfba9c28
+      internalID: 691279139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_113
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 66
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967acdeb8fb5c17429606bec4c09d6ef
+      internalID: 1782435547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_114
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 66
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfc5b479ba6beb4cab1c7ff94026eca
+      internalID: -304487302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_115
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 66
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d99bd8e8b5f9b14eb9f7681f06d763d
+      internalID: 1785135409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_116
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 14
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2527a7e6e10305f48b2261fa07d19f36
+      internalID: 1345882908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_117
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 10
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4eccd2ff3b3ae4395a8e8804da9d31
+      internalID: -2132079134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_118
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 5
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016e0de03ae61884db5f7d133922e170
+      internalID: 334581617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_119
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 10
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c787581216b784f80b09218403edd9
+      internalID: -1468258617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 412
+        width: 817
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013df2824edb8ba42a905f76dea579e5
+      internalID: 897538723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_0: 992459560
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_15: -554490930
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_111: -1070032875
+      19: -1817670328
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_73: 722480614
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_5: -1953692952
+      12: -1835071700
+      6: -330175940
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_61: 848494185
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_77: 409880992
+      5: -161036305
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_14: 478589420
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_68: 2014828439
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_55: 386023998
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_109: 1227841118
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_98: 999099879
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_104: 1014911303
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_69: -585769503
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_116: 1345882908
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_33: 260454046
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_60: 1364732548
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_93: 1889305951
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_34: 259090682
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_45: 1528062705
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_54: -1248515053
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_83: -137942583
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_79: -1444068298
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_102: 1794956604
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_84: -615408837
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_118: 334581617
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_70: -792225238
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_89: -1374380411
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_105: 956038290
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_47: -548296818
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_41: 607208060
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_115: 1785135409
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_71: 474567114
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_1: 1848487111
+      4: -623790225
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_39: 1886195585
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_46: 655158581
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_91: 2058701247
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_52: -84241563
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_74: -894455563
+      14: 1552882992
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_108: -507151956
+      9: -657258419
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_66: -750243372
+      16: 101229280
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_87: -1055302199
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_44: -456058825
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_51: -1616435225
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_107: -199328048
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_65: 503536251
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_36: -1165062818
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_26: -563553296
+      17: 792151779
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_103: -1255424056
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_4: -552015998
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_97: -1516617433
+      15: 192728564
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_37: -18466044
+      3: -789033991
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_72: -1285950703
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_43: 1862889885
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_78: 1152262441
+      18: -1541640172
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_67: -1368641012
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_59: 1786788431
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_57: -861648368
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_42: -884081203
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_80: -464545248
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_96: -38490994
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_63: -868815728
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_62: 313683168
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_40: 1943489515
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_3: -389859029
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_50: 2055919447
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_99: -288798285
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_29: -1088546007
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_88: -1628950018
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_64: 926169039
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_95: -776111093
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_75: -1611509792
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_92: -311079307
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_110: -91998767
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_81: 221753871
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_48: -958444244
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_100: 1513327034
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_38: 1468908011
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_85: -891418750
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_112: 691279139
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_117: -2132079134
+      8: -1804715976
+      11: -1348456458
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_56: 258677133
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_6: -1276661332
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_101: 887160578
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_18: -786103752
+      2: -1188413384
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_94: -1306081370
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_2: 2084717497
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_31: 338667354
+      13: -2126644369
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_58: 516640991
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_76: 158695268
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_113: 1782435547
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_90: 314662416
+      1: 2014351109
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_32: -424322229
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_53: -527857324
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_49: -642317351
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_35: -508995355
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_119: -1468258617
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_82: 1526538077
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_106: 1181746408
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_114: -304487302
+      7: 928177338
+      10: -119774323
+      gen_7_pokemon_sprites_by_leparagon_dahihhj-414w-2x_86: 9462427
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
