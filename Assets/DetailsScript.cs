@@ -23,7 +23,7 @@ public class DetailsScript : MonoBehaviour
     protected virtual void UpdateText()
     {
         scoreText.text = "Score : " + BlockManager.Instance.Score;
-        remainingTurnText.text = "RemainingTurn Text : " + BlockManager.Instance.remainingTurn;
+        remainingTurnText.text = "RemainingTurn Text : " + (BlockManager.Instance.remainingTurn + (BlockManager.Instance.rows * BlockManager.Instance.cols));
         correctPairText.text = "Correct Pair : " + BlockManager.Instance.correctPair;
     }
 }    

@@ -8,16 +8,15 @@ using UnityEngine.UI;
 
 public class BlockManager : MonoBehaviour
 {
-
-
-
     private static BlockManager instance;
     public static BlockManager Instance { get => instance; }
 
     [SerializeField] protected Transform blockPrefab;
-
     [SerializeField] public  Transform GameUI;
     [SerializeField] public Transform Blocks;
+    [SerializeField] public Transform LevelUI;
+    [SerializeField] public Transform VictoryUI;
+
 
 
     [SerializeField] private int score;
@@ -29,6 +28,9 @@ public class BlockManager : MonoBehaviour
     public int cols = 0;
 
     private bool canFlip = true;
+
+    public bool winGame = false;
+    [SerializeField] public int lockLevel = 1;
 
     private List<int> cardValues = new List<int>();
     [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
@@ -55,7 +57,7 @@ public class BlockManager : MonoBehaviour
     {
         
         this.score = 0;
-        this.remainingTurn = 20;
+        this.remainingTurn = 10;
         this.correctPair = 0;
 
         blockPrefab.gameObject.SetActive(false);
@@ -119,9 +121,16 @@ public class BlockManager : MonoBehaviour
         if (flippedBLock[0].Value == flippedBLock[1].Value)
         {
             score+= 5;
+            correctPair++;
             flippedBLock[0].GetComponent<Button>().interactable = false;
             flippedBLock[1].GetComponent<Button>().interactable = false;
-
+            yield return new WaitForSeconds(0.5f);
+            if(correctPair == (rows * cols) / 2)
+            {
+                winGame = true;
+                lockLevel++;
+                this.VictoryUI.gameObject.SetActive(true);
+            }
         }
         else
         {
@@ -133,7 +142,19 @@ public class BlockManager : MonoBehaviour
         canFlip = true;
     }
 
-    public void ChangeColumnsAndRows(int row , int col)
+    public void DestroyBlocks()
+    {
+         Transform blocks =  this.GameUI.transform.Find("Blocks");
+
+        foreach (Transform block in blocks)
+        {
+            Destroy(block.gameObject);
+        }
+
+        Debug.Log("DestroyBlocks");
+    }
+
+    public void SetColumnsAndRows(int row , int col)
     {
         this.rows = row;
         this.cols = col;
