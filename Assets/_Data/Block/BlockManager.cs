@@ -32,7 +32,7 @@ public class BlockManager : ChiMonoBehaviour
     public int cols = 0;
     private bool canFlip = true;
     public bool winGame = false;
-    [SerializeField] public int lockLevel = 1; // khoi dau level 1
+    [SerializeField] public int lockLevelCount = 1; // khoi dau level 1
 
     private List<int> cardValues = new List<int>();
     [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
@@ -46,6 +46,7 @@ public class BlockManager : ChiMonoBehaviour
 
     protected override void LoadComponents()
     {
+        base.LoadComponents();
         this.LoadCanvas();
         this.LoadBlockPrefab();
         this.LoadLevelUI();
@@ -56,6 +57,15 @@ public class BlockManager : ChiMonoBehaviour
 
     }
 
+
+
+    protected override void Awake()
+    {
+        if (BlockManager.instance != null) Debug.LogError("Only 1 BlockManager allow to exist");
+        BlockManager.instance = this;
+        sprites = Resources.LoadAll<Sprite>("Image/Blocks");
+        sprites = Resources.LoadAll<Sprite>("Image");
+    }
     protected virtual void LoadBlockPrefab() 
      {
         if (this.blockPrefab != null) return;
@@ -103,13 +113,6 @@ public class BlockManager : ChiMonoBehaviour
  
 
 
-    protected override void Awake()
-    {
-        if (BlockManager.instance != null) Debug.LogError("Only 1 BlockManager allow to exist");
-        BlockManager.instance = this;
-        sprites = Resources.LoadAll<Sprite>("Image/Blocks");
-        sprites = Resources.LoadAll<Sprite>("Image");
-    }
 
   
 
@@ -187,7 +190,7 @@ public class BlockManager : ChiMonoBehaviour
             if(correctPair == (rows * cols) / 2)
             {
                 winGame = true;
-                lockLevel++;
+                lockLevelCount++;
                 this.victoryUI.gameObject.SetActive(true);
             }
         }
