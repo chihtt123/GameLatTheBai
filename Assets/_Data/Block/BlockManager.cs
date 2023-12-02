@@ -6,31 +6,33 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BlockManager : MonoBehaviour
+public class BlockManager : ChiMonoBehaviour
 {
+
+    
     private static BlockManager instance;
     public static BlockManager Instance { get => instance; }
 
+
+
     [SerializeField] protected Transform blockPrefab;
-    [SerializeField] public  Transform GameUI;
-    [SerializeField] public Transform Blocks;
-    [SerializeField] public Transform LevelUI;
-    [SerializeField] public Transform VictoryUI;
+    [SerializeField] protected Canvas canvas;
+    [SerializeField] public  Transform gameUI;
+    [SerializeField] public Transform blocks;
+    [SerializeField] public Transform levelUI;
+    [SerializeField] public Transform victoryUI;
 
 
 
     [SerializeField] private int score;
-
     [SerializeField] public int remainingTurn;
     [SerializeField] public int correctPair;
 
     public int rows = 0;
     public int cols = 0;
-
     private bool canFlip = true;
-
     public bool winGame = false;
-    [SerializeField] public int lockLevel = 1;
+    [SerializeField] public int lockLevel = 1; // khoi dau level 1
 
     private List<int> cardValues = new List<int>();
     [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
@@ -39,11 +41,69 @@ public class BlockManager : MonoBehaviour
     [SerializeField] public Sprite[] spritesGame;
 
 
-    [SerializeField] private List<GameObject> levels = new List<GameObject>();
 
-    public int Score { get => score; set => score = value; }
+    public int Score { get => score; }
 
-    void Awake()
+    protected override void LoadComponents()
+    {
+        this.LoadCanvas();
+        this.LoadBlockPrefab();
+        this.LoadLevelUI();
+        this.LoadGameUI();
+        this.LoadBlockLevels();
+        this.LoadVictoryUI();
+
+
+    }
+
+    protected virtual void LoadBlockPrefab() 
+     {
+        if (this.blockPrefab != null) return;
+        this.blockPrefab = transform.Find("Block");
+        Debug.LogWarning(transform.name + " LoadBlockPrefab", gameObject);  
+     }
+
+
+    protected virtual void LoadGameUI()
+    {
+        if (this.gameUI != null) return;
+        this.gameUI = this.canvas.transform.Find("GameUI");
+        Debug.LogWarning(transform.name + " LoadGameUI", gameObject);
+    }
+    protected virtual void LoadLevelUI()
+    {
+        if (this.levelUI != null) return;
+        this.levelUI = this.canvas.transform.Find("LevelsUI");
+        Debug.LogWarning(transform.name + " LoadLevelUI", gameObject);
+    }
+
+    protected virtual void LoadBlockLevels()
+    {
+        if (this.blocks != null) return;
+        this.blocks = this.gameUI.transform.Find("Blocks");
+        Debug.LogWarning(transform.name + " LoadLevelUI", gameObject);
+    }
+
+       protected virtual void LoadVictoryUI()
+    {
+        if (this.victoryUI != null) return;
+        this.victoryUI = this.canvas.transform.Find("VictoryUI");
+        Debug.LogWarning(transform.name + " LoadVictoryUI", gameObject);
+    }
+
+
+
+    protected virtual void LoadCanvas()
+    {
+        if (this.canvas != null) return;
+        this.canvas = BlockManager.FindObjectOfType<Canvas>();
+        Debug.LogWarning(transform.name + " LoadCanvas", gameObject);
+    }
+
+ 
+
+
+    protected override void Awake()
     {
         if (BlockManager.instance != null) Debug.LogError("Only 1 BlockManager allow to exist");
         BlockManager.instance = this;
@@ -55,7 +115,6 @@ public class BlockManager : MonoBehaviour
 
       public void InitializeBlock()
     {
-        
         this.score = 0;
         this.remainingTurn = 10;
         this.correctPair = 0;
@@ -78,7 +137,7 @@ public class BlockManager : MonoBehaviour
                 card.GetComponent<BlockItem>().SetValue(values[i * cols + j]);
                 card.gameObject.SetActive(true);
                
-                card.SetParent(this.Blocks);     
+                card.SetParent(this.blocks);     
             }
         }
         return; 
@@ -129,7 +188,7 @@ public class BlockManager : MonoBehaviour
             {
                 winGame = true;
                 lockLevel++;
-                this.VictoryUI.gameObject.SetActive(true);
+                this.victoryUI.gameObject.SetActive(true);
             }
         }
         else
@@ -144,7 +203,7 @@ public class BlockManager : MonoBehaviour
 
     public void DestroyBlocks()
     {
-         Transform blocks =  this.GameUI.transform.Find("Blocks");
+         Transform blocks =  this.gameUI.transform.Find("Blocks");
 
         foreach (Transform block in blocks)
         {

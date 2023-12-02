@@ -61,14 +61,14 @@ public class SelectLevel : MonoBehaviour
     {
         BlockManager.Instance.DestroyBlocks();
         this.LoadLevel(BlockManager.Instance.lockLevel);
-        BlockManager.Instance.VictoryUI.gameObject.SetActive(false);
+        BlockManager.Instance.victoryUI.gameObject.SetActive(false);
     }
 
     public  void RestartLV()
     {
         BlockManager.Instance.DestroyBlocks();
         BlockManager.Instance.InitializeBlock();
-        BlockManager.Instance.VictoryUI.gameObject.SetActive(false);
+        BlockManager.Instance.victoryUI.gameObject.SetActive(false);
 
     }
     
@@ -112,7 +112,7 @@ public class SelectLevel : MonoBehaviour
       
         this.transform.gameObject.SetActive(false);
         BlockManager.Instance.InitializeBlock();
-        BlockManager.Instance.GameUI.gameObject.SetActive(true);
+        BlockManager.Instance.gameUI.gameObject.SetActive(true);
 
 
 
