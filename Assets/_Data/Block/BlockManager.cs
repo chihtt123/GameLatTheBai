@@ -24,7 +24,7 @@ public class BlockManager : ChiMonoBehaviour
 
 
 
-    [SerializeField] private int score;
+    [SerializeField] private int score = 0;
     [SerializeField] public int remainingTurn;
     [SerializeField] public int correctPair;
 
@@ -33,7 +33,7 @@ public class BlockManager : ChiMonoBehaviour
     private bool canFlip = true;
     public bool winGame = false;
     [SerializeField] public int lockLevelCount = 1; // khoi dau level 1
-
+    
     private List<int> cardValues = new List<int>();
     [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
 
@@ -118,7 +118,7 @@ public class BlockManager : ChiMonoBehaviour
 
       public void InitializeBlock()
     {
-        this.score = 0;
+       
         this.remainingTurn = 10;
         this.correctPair = 0;
 
@@ -184,6 +184,7 @@ public class BlockManager : ChiMonoBehaviour
         {
             score+= 5;
             correctPair++;
+            remainingTurn++;
             flippedBLock[0].GetComponent<Button>().interactable = false;
             flippedBLock[1].GetComponent<Button>().interactable = false;
             yield return new WaitForSeconds(0.5f);
