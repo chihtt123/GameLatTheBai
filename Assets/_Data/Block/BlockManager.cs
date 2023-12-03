@@ -34,7 +34,7 @@ public class BlockManager : ChiMonoBehaviour
     public bool winGame = false;
     [SerializeField] public int lockLevelCount = 1; // khoi dau level 1
     
-    private List<int> cardValues = new List<int>();
+
     [SerializeField] private List<BlockItem> flippedBLock = new List<BlockItem>();
 
     [SerializeField] public Sprite[] sprites;
@@ -121,8 +121,6 @@ public class BlockManager : ChiMonoBehaviour
        
         this.remainingTurn = 10;
         this.correctPair = 0;
-
-        blockPrefab.gameObject.SetActive(false);
         List<int> values = new List<int>();
         for (int i = 0; i < (rows * cols) / 2; i++)
         {
