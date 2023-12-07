@@ -21,6 +21,7 @@ public class BlockManager : ChiMonoBehaviour
     [SerializeField] public Transform blocks;
     [SerializeField] public Transform levelUI;
     [SerializeField] public Transform victoryUI;
+    [SerializeField] public Transform loseUI;
 
 
 
@@ -53,7 +54,7 @@ public class BlockManager : ChiMonoBehaviour
         this.LoadGameUI();
         this.LoadBlockLevels();
         this.LoadVictoryUI();
-
+        this.LoadLoseUI();
 
     }
 
@@ -66,7 +67,7 @@ public class BlockManager : ChiMonoBehaviour
         sprites = Resources.LoadAll<Sprite>("Image/Blocks");
         sprites = Resources.LoadAll<Sprite>("Image");
     }
-    protected virtual void LoadBlockPrefab() 
+    protected  void LoadBlockPrefab() 
      {
         if (this.blockPrefab != null) return;
         this.blockPrefab = transform.Find("Block");
@@ -74,31 +75,38 @@ public class BlockManager : ChiMonoBehaviour
      }
 
 
-    protected virtual void LoadGameUI()
+    protected  void LoadGameUI()
     {
         if (this.gameUI != null) return;
         this.gameUI = this.canvas.transform.Find("GameUI");
         Debug.LogWarning(transform.name + " LoadGameUI", gameObject);
     }
-    protected virtual void LoadLevelUI()
+    protected  void LoadLevelUI()
     {
         if (this.levelUI != null) return;
         this.levelUI = this.canvas.transform.Find("LevelsUI");
         Debug.LogWarning(transform.name + " LoadLevelUI", gameObject);
     }
 
-    protected virtual void LoadBlockLevels()
+    protected  void LoadBlockLevels()
     {
         if (this.blocks != null) return;
         this.blocks = this.gameUI.transform.Find("Blocks");
         Debug.LogWarning(transform.name + " LoadLevelUI", gameObject);
     }
 
-       protected virtual void LoadVictoryUI()
+       protected  void LoadVictoryUI()
     {
         if (this.victoryUI != null) return;
         this.victoryUI = this.canvas.transform.Find("VictoryUI");
         Debug.LogWarning(transform.name + " LoadVictoryUI", gameObject);
+    }
+
+    protected  void LoadLoseUI()
+    {
+        if (this.loseUI != null) return;
+        this.loseUI = this.canvas.transform.Find("LoseUI");
+        Debug.LogWarning(transform.name + " LoadLoseUI", gameObject);
     }
 
 
@@ -119,7 +127,7 @@ public class BlockManager : ChiMonoBehaviour
       public void InitializeBlock()
     {
        
-        this.remainingTurn = 10;
+        this.remainingTurn =  (rows * cols);
         this.correctPair = 0;
         List<int> values = new List<int>();
         for (int i = 0; i < (rows * cols) / 2; i++)
@@ -137,7 +145,6 @@ public class BlockManager : ChiMonoBehaviour
                 Transform card = Instantiate(blockPrefab, new Vector3(j, -i, 0), Quaternion.identity);
                 card.GetComponent<BlockItem>().SetValue(values[i * cols + j]);
                 card.gameObject.SetActive(true);
-               
                 card.SetParent(this.blocks);     
             }
         }
@@ -170,8 +177,14 @@ public class BlockManager : ChiMonoBehaviour
         if (flippedBLock.Count == 2)
         {
             remainingTurn--;
+            if (this.remainingTurn <= 0)
+            {
+                loseUI.gameObject.SetActive(true);
+                gameUI.gameObject.SetActive(false);
+            }
             StartCoroutine(CheckMatch());
         }
+      
     }
 
     IEnumerator CheckMatch()

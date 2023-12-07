@@ -59,13 +59,15 @@ public class SelectLevel : ChiMonoBehaviour
         BlockManager.Instance.DestroyBlocks();
         this.LoadLevel(BlockManager.Instance.lockLevelCount);
         BlockManager.Instance.victoryUI.gameObject.SetActive(false);
+
     }
 
-    public  void RestartLV()
+    public  void RestartLV(Transform UI)
     {
         BlockManager.Instance.DestroyBlocks();
         BlockManager.Instance.InitializeBlock();
-        BlockManager.Instance.victoryUI.gameObject.SetActive(false);
+        UI.gameObject.SetActive(false);
+        BlockManager.Instance.gameUI.gameObject.SetActive(true);
 
     }
     

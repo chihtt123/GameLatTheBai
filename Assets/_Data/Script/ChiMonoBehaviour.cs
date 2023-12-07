@@ -12,6 +12,7 @@ public abstract class ChiMonoBehaviour : MonoBehaviour
     protected virtual void Start()
     {
         //For override
+        this.LoadComponents();
     }
 
     protected virtual void Reset()
